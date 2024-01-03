@@ -10,10 +10,14 @@ const NavBar = () => {
     const currentPath = usePathname();
     const links = [
         {label: 'Dashboard', href :'/'}, 
-        {label: 'Issues', href : '/issues'}, 
+        {label: 'Sales', href : '/Sales'}, 
+        {label: 'Expenses', href : '/Expenses'},
+        {label: 'Empolyees', href : '/Employees'},
+        {label: 'Reports', href : '/Reports'},
+        {label: 'Accounts', href : '/Accounts'}  
     ];
   return (
-    <nav className='flex space-x-6 border-b mb-5 padding-5 px-2 h-12 items-center hover:bg-slate-200'>
+    <nav className='flex space-x-6 border-b mb-5 padding-5 px-2 h-12 items-center hover:bg-slate-200 justify-center'>
         <Link href="/"><AiFillBug /></Link>
         <ul className='space-x-6 flex'>
             {links.map(link => 
